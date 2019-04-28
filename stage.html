@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Stages of cancer</title>
+  	<link href="https://fonts.googleapis.com/css?family=Cinzel|Orbitron" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  	<link rel="shortcut icon" type="image/x-icon" href="himages/fav.png" />
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>$(function(){$("#visible").click(function(){$("#invisible").toggleClass("show");});});</script>
+    <script>$(function(){$("#visible1").click(function(){$("#invisible1").toggleClass("show");});});</script>
+    <script>$(function(){$("#visible2").click(function(){$("#invisible2").toggleClass("show");});});</script>
+    <script>$(function(){$("#visible3").click(function(){$("#invisible3").toggleClass("show");});});</script>
+
+	<style media="screen">
+	body {
+	font-family: tahoma,sans-serif,arial;
+	margin:0;
+	background: #f7f1e3;
+
+}
+
+/* Heading_part */
+
+.container {
+	width:95%;
+	min-height: 180px;
+	margin:auto;
+
+}
+
+.logo {
+	width:30%;
+	float:left;
+
+}
+
+.mainmenu {
+	width:70%;
+	float:right;
+	margin-top: 50px;
+	background: #1e272e;
+}
+
+.mainmenu:after {
+	content:' ';
+	display:block;
+	clear:both;
+
+
+}
+
+.mainmenu ul {
+	margin:0;
+	list-style:none;
+}
+
+.mainmenu > ul > li {
+	float:left;
+	position:relative;
+
+}
+
+.mainmenu ul li a {
+	text-decoration:none;
+	color:#FFFFFF;
+	padding: 10px 58px;
+	text-transform: capitalize;
+	display:block;
+
+}
+
+.mainmenu ul li:hover a {
+	background: linear-gradient(#ED1C24, #ff3f34);
+
+}
+
+
+.mainmenu ul .anything a {
+	background: #ED1C24;
+
+}
+
+/* SUB_MENU */
+
+.mainmenu ul ul {
+	padding-left:0;
+	position:absolute;
+	left:0;
+	top:100%;
+	min-width:150px;
+	display:none;
+
+
+}
+
+.mainmenu ul li:hover > ul {
+	display:block;
+
+}
+
+.mainmenu ul ul li:hover a {
+	background: #241F1C;
+
+}
+
+.mainmenu ul ul ul {
+	left:100%;
+	top:0;
+
+}
+
+.mainmenu ul ul li {
+	position: relative;
+
+}
+
+.mainmenu ul ul ul li:hover a {
+	background: linear-gradient(#ED1C24, #ff3f34);
+
+}
+
+/* Main-Part */
+
+.mainarea {
+	margin-top:50px;
+
+}
+
+.mainarea .container {
+	width:95%;
+	margin:auto;
+
+}
+
+.mainarea .intro .inimage img{
+	width:55%;
+	float:left;
+	margin-right:5%;
+
+}
+
+.mainarea .intro .intext {
+	width:40%;
+	overflow:hidden;
+
+}
+
+.mainarea h1{
+	font-family: 'Roboto Mono', monospace;
+	color: #ED1C24;
+	font-size: 45px;
+	margin-top:0;
+
+}
+
+.stage h1{
+	font-family: 'Orbitron', sans-serif;
+	color: #ED1C24;
+	font-size: 45px;
+	margin-top:0;
+	word-spacing: 6px;
+	background-color: #241F1C;
+	padding: 10px;
+	
+}
+
+.mainarea  p {
+	color:#241F1C;
+	font-weight:bold;
+	word-spacing: 5px;
+	font-family: 'Abel', sans-serif;
+
+}
+
+
+/* Footer-Area */
+
+.footer {
+	margin-top: 75px;
+	float:left;
+	background: #241F1C;
+	width:100%;
+	padding: 15px 0;
+	font-family: 'Abel', sans-serif;
+	color: #ED1C24;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+.footer p {
+	color: #ED1C24;
+}
+
+ .intext h1{
+	font-family: 'Orbitron', sans-serif;
+	color: #ED1C24;
+	font-size: 45px;
+	margin-top:0;
+	word-spacing: 6px;
+
+}
+
+.intext button h1{
+	font-family: 'Orbitron', sans-serif;
+	color: #241F1C;
+	font-size: 15px;
+	margin-top:0;
+	word-spacing: 6px;
+
+}
+
+.intext button a {
+	text-decoration: none;
+	color: #241F1C;
+	font-weight: bold;
+}
+
+.intext button {
+
+ background-color: #ED1C24;
+
+}
+
+.mainmenu .anything {
+	background: #ED1C24;
+	text-align: center;
+	text-size: 15px;
+
+}
+#visible,#visible1,#visible2,#visible3 {
+		background: #ED1C24;
+		font-size: 20px;
+		width: 200px;
+		height: 30px;
+    margin-left: 550px;
+}
+.hide{display: none;}
+.show{display: block;}
+.intext1 p{
+	color:#241F1C;
+	font-weight:bold;
+	word-spacing: 5px;
+	font-family: 'Abel', sans-serif;
+	visibility: visible;
+}
+.intext h1{
+	text-align: center;
+}
+.intext2 h1 {
+	text-align: center;
+}
+.intext h1{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+	</style>
+
+
+  </head>
+  <body>
+    <div class="header">
+
+        <div class="container">
+            <div class="logo">
+                <a href="home.html"><img src="himages/logo.png" alt="logo" /> </a>
+            </div>
+
+            <nav class="mainmenu">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="#">Cancer</a>
+                        <ul class="submenu">
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="center.html">cancer center</a></li>
+                            <li><a href="statistic.html">statistic</a></li>
+                            <li><a href="#">facts</a>
+                              <ul>
+                                <li><a href="causes.html">causes</a></li>
+                                <li><a href="factors.html">factors</a></li>
+                              </ul>
+
+                            </li>
+
+                            <li><a href="#">Stages of cancer</a>
+                              <ul>
+                                <li class="anything"><a href="stage.html">Stage 1-4</a></li>
+                              </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </div>
+  </div>
+
+
+      <div class="mainarea">
+
+           <div class="container">
+
+                <div class="intext">
+                    <div class="stage"><h1>The stages of cancer</h1></div>
+                    <p>
+                      The 4 stages of cancer can be broken down as follows: Stage 0 means the cancer is in one place.
+                      Stage 1 means a small tumour spread to nearby tissue. Stage 2 means the tumour is larger and may
+                       have spread. Stage 3 means the cancer may have started to spread to surrounding tissue or lymph
+                       nodes in the area. Stage 4 cancer, or metastatic cancer, means it has spread to other organs or
+                       areas of the body.<br></p>
+                       <button id="visible"><h1>Stage 0</h1></button>
+                        <p id="invisible" class="hide">This is used to describe cancer in situ, which literally means
+                          “in place.” Cancers at this stage are identified according to the location where they initially
+                           emerged and multiplied. However, the resulting tumour has not yet spread to nearby tissue.
+                           The good news is prognosis for Stage 0 cancer is very high. Natural treatments couples with
+                           clean eating (no processed food) and taking steps to boost your immune system are often all
+                           that’s needed at this stage to reverse the cancer.<br> <br>
+                           <button type="button" name="button"><a href="stage0.html">Know more</a></button>
+                           <br></p> <br> <br>
+                      <button id="visible1"><h1>Stage 1</h1></button>
+                      <p id="invisible1" class="hide">This describes a small cancerous tumour that has spread to nearby
+                         tissue but not beyond – such as the blood stream or lymph system. Doctors may refer to this as
+                         “early stage” cancer and insist on implementing immediate treatment protocol since, at this stage
+                          the prognosis is very good using traditional care. Nevertheless, complementary and alternative
+                          treatment options should be given top priority at this time as well as healthy changes to diet
+                          and personal habits to fight the cancer and prevent its return.<br> <br>
+                          <button type="button" name="button"><a href="stage1.html">Know more</a></button>
+                          <br></p> <br><br>
+                      <button id="visible2"><h1>Stage 2 & 3</h1></button>
+                      <p id="invisible2" class="hide">These stages are known as “regional spread” cancers. They indicate
+                        that the cancer has expanded and will have embedded itself more deeply into the surrounding tissue.
+                         At these stages, cancer cells have entered the blood stream which may lead to detection in the lymph
+                          system since cancer cells can get “caught” in the nodes as they travel. Boosting your immune system
+                           is crucial at this level since the invasion of your lymph system is likely to trigger an immune
+                           response which should in turn shut down the mutations. Stage 2 and 3 indicate a serious cause for
+                            concern, but the cancer has not spread to the other organs in the body, so there is still hope.<br> <br>
+                            <button type="button" name="button"><a href="stage2&3.html">Know more</a></button>
+                      <br></p><br><br>
+                      <button id="visible3"><h1>Stage 4</h1></button>
+                      <p id="invisible3" class="hide">When cancer spreads from the initial site to other organs or areas
+                         of the body, it is referred to as “distant spread” cancer, advanced cancer, or metastatic cancer.
+                          This type of cancer is more difficult to treat, but not impossible! Attention to complementary
+                           modalities, alternative treatments, and healthy changes to your entire lifestyle from habits to
+                           diet is critical at this stage for a better chance of survival.
+                      Many forms of cancer can be life threatening, but just as you would defend yourself in a physical
+                      altercation, you must be prepared to do the same with cancer. <br><b><br>
+                      <button type="button" name="button"><a href="stage4.html">Know more</a></button>
+                    </p> <br>
+                </div>
+            </div>
+
+      </div>
+
+    <div class="footer">
+  			<p>© 2019 || All Rights Reserved By HopeWishers</p>
+  	</div>
+    <script>
+      function text(x)
+      {
+        if (x==0)
+        document.getElementsById('visible').style.display='block';
+        else
+        document.getElementsById('invisible').style.display='none';
+        return;
+      }
+      function text2(y)
+      {
+        if (y==0)
+        document.getElementsById('visible1').style.display='block';
+        else
+        document.getElementsById('invisible1').style.display='none';
+        return;
+      }
+      function text3(z)
+      {
+        if (z==0)
+        document.getElementsById('visible2').style.display='block';
+        else
+        document.getElementsById('invisible2').style.display='none';
+        return;
+      }
+      function text4(w)
+      {
+        if (w==0)
+        document.getElementsById('visible3').style.display='block';
+        else
+        document.getElementsById('invisible3').style.display='none';
+        return;
+      }
+    </script>
+  </body>
+</html>

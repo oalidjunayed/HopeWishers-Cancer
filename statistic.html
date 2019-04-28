@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Statistics</title>
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Orbitron" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="himages/fav.png" />
+
+	<style media="screen">
+
+	body {
+	font-family: tahoma,sans-serif,arial;
+	margin:0;
+	background: #f7f1e3;
+
+}
+
+/* Heading_part */
+
+.container {
+	width:95%;
+	min-height: 180px;
+	margin:auto;
+
+}
+
+.logo {
+	width:30%;
+	float:left;
+
+}
+
+.mainmenu {
+	width:70%;
+	float:right;
+	margin-top: 50px;
+	background: #1e272e;
+}
+
+.mainmenu:after {
+	content:' ';
+	display:block;
+	clear:both;
+
+
+}
+
+.mainmenu ul {
+	margin:0;
+	list-style:none;
+}
+
+.mainmenu > ul > li {
+	float:left;
+	position:relative;
+
+}
+
+.mainmenu ul li a {
+	text-decoration:none;
+	color:#FFFFFF;
+	padding: 10px 58px;
+	text-transform: capitalize;
+	display:block;
+
+}
+
+.mainmenu ul li:hover a {
+	background: linear-gradient(#ED1C24, #ff3f34);
+
+}
+
+
+.mainmenu ul .anything a {
+	background: #ED1C24;
+
+}
+
+/* SUB_MENU */
+
+.mainmenu ul ul {
+	padding-left:0;
+	position:absolute;
+	left:0;
+	top:100%;
+	min-width:150px;
+	display:none;
+
+
+}
+.i1image img{
+	width:50%;
+	float:left;
+	margin-right:5%;
+	margin-top: 7%;
+
+}
+
+.mainmenu ul li:hover > ul {
+	display:block;
+
+}
+
+.mainmenu ul ul li:hover a {
+	background: #241F1C;
+
+}
+
+.mainmenu ul ul ul {
+	left:100%;
+	top:0;
+
+}
+
+.mainmenu ul ul li {
+	position: relative;
+
+}
+
+.mainmenu ul ul ul li:hover a {
+	background: linear-gradient(#ED1C24, #ff3f34);
+
+}
+
+/* Main-Part */
+
+.mainarea .intro {
+
+	margin-top: 60px;
+
+}
+
+.mainarea .intro .intext {
+	width:40%;
+	overflow:hidden;
+
+}
+
+.mainarea h1{
+	font-family: 'Orbitron', sans-serif;
+	color: #ED1C24;
+	font-size: 45px;
+	margin-top:0;
+	word-spacing: 6px;
+	background-color: #241F1C;
+	padding: 10px;
+	text-align: center;
+	
+}
+
+.mainarea  p {
+	color:#241F1C;
+	font-weight:bold;
+	word-spacing: 5px;
+	font-family: 'Abel', sans-serif;
+
+}
+<!-- .pdf h1{ -->
+	<!-- font-size: 30px; -->
+	<!-- padding: 10px 5px; -->
+	<!-- margin-top: 10px; -->
+	<!-- width: 490px; -->
+
+
+<!-- } -->
+
+.lat h1{
+	margin-top: 80px;
+
+}
+
+.pdf{
+	margin-top: 30px;
+	width: 810px;
+}
+
+
+/* Footer-Area */
+
+.footer {
+	margin-top: 50px;
+	float:left;
+	background: #241F1C;
+	width:100%;
+	padding: 15px 0;
+	font-family: 'Abel', sans-serif;
+	color: #ED1C24;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+.footer p{
+	color: #ED1C24;
+
+}
+
+
+
+	</style>
+</head>
+<body>
+
+		<div class="header">
+
+				<div class="container">
+						<div class="logo">
+							<a href="home.html"><img src="himages/logo.png" alt="logo" /> </a>
+						</div>
+
+						<nav class="mainmenu">
+								<ul>
+										<li><a href="home.html">home</a></li>
+										<li><a href="#">Cancer</a>
+												<ul class="submenu">
+														<li><a href="history.html">History</a></li>
+														<li><a href="center.html">cancer center</a></li>
+														<li class="anything"><a href="statistic.html">statistic</a></li>
+														<li><a href="#">facts</a>
+															<ul>
+																<li><a href="causes.html">causes</a></li>
+																<li><a href="factors.html">factors</a></li>
+															</ul>
+
+														</li>
+
+														<li><a href="#">Stages of cancer</a>
+															<ul>
+																<li><a href="stage.html">Stage 1-4</a></li>
+															</ul>
+														</li>
+												</ul>
+
+										</li>
+										<li><a href="faq.html">FAQ</a></li>
+										<li><a href="contact.html">Contact</a></li>
+										<li><a href="references.html">References</a></li>
+								</ul>
+						</nav>
+				</div>
+	</div>
+
+	<div class="mainarea">
+
+		<div class="container">
+				<div class="intro">
+
+						<div class="stats">
+								<h1>Statistic of Cancer </h1>
+						</div>
+
+						<div class="i1mage">
+										<img src="himages/cancerstats.png" alt="photo" />
+						</div>
+
+						<div class="lat"><h1>(Latest Global Cancer Data Sept 2018 from WHO) </h1> </div>
+						<div class="pdf">
+						<embed src="https://www.who.int/cancer/PRGlobocanFinal.pdf" type="application/pdf" width="100%" height="600px" />
+
+					</div>
+				</div>
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<p>	© 2019 || All Rights Reserved By HopeWishers </p>
+	</div>
+
+
+</body>
+</html>
